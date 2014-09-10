@@ -39,7 +39,7 @@ public class Arithmetic{
         double itemTaxGlasses=(int)(totalGlassesCost$*taxPercent*100)/100.0;
         double itemTaxEnvelope=(int)(totalEnvelopeCost$*taxPercent*100)/100.0;
         
-        //double tax$=(int)(purchaseTax$*100)/100.0; // tax for the current purchase only two decimals
+        // tax for the current purchase only two decimals
         double tax$=(int)((itemTaxSocks+itemTaxGlasses+itemTaxEnvelope)*100)/100.0;
        
        
@@ -55,17 +55,17 @@ public class Arithmetic{
         System.out.println(" ");
         System.out.println(nSocks+" pairs of socks @ $"+sockCost$);
         System.out.println("$"+totalSockCost$); 
-        System.out.println("Tax for this item: $"+itemTaxSocks);
+        System.out.println("Tax for these items: $"+itemTaxSocks);
         System.out.println(" ");
         
         System.out.println(nGlasses+" Glasses @ $"+glassCost$);
         System.out.println("$"+totalGlassesCost$);
-        System.out.println("Tax for this item: $"+itemTaxGlasses);
+        System.out.println("Tax for these items: $"+itemTaxGlasses);
         System.out.println(" ");
         
         System.out.println(nEnvelopes+" Envelopes @ $"+envelopeCost$);
         System.out.println("$"+totalEnvelopeCost$);
-        System.out.println("Tax for this item: $"+itemTaxEnvelope);
+        System.out.println("Tax for these items: $"+itemTaxEnvelope);
         System.out.println(" ");
         
         System.out.println(" ");
