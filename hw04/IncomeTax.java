@@ -1,6 +1,6 @@
 // Jose Sierra
-// CSE 2 - hw04
-// Program #1 Income Tax
+// CSE 2 
+// hw04 - Program #1 Income Tax
 /* The program prompts the user to enter an integer integer that gives the thousands
  of dollars of income and then writes the amount of tax on the income, according to:
  <20, 5%; >=20 and <40, 7%; >=40 and <78, 12%; >=78, 14%. */
@@ -9,7 +9,7 @@ import java.util.Scanner;
 
 // define public class
 public class IncomeTax {
-    
+    // main method:
     public static void main(String[] args) {
         System.out.println(" "); // prints out an empty line for visual appealling
     
