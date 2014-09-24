@@ -34,6 +34,7 @@ public class TimePadding {
                 System.out.println(myScanner+" Is out of the range [0, 43200]");
             }
             
+            // the following determines the hours, minutes, and seconds
             else {
                 hours = timeInSeconds/3600;
                 minutes = (timeInSeconds%3600)/60;
@@ -42,6 +43,7 @@ public class TimePadding {
                 System.out.println("The time is:");
                 System.out.print(hours+":");
                 
+                // the folowing accounts for the "padding"
                 if (minutes <10 || seconds <10) {
                     System.out.println("0"+minutes+":0"+seconds);
                 }
