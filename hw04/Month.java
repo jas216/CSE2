@@ -70,6 +70,7 @@ public class Month {
             System.out.println("You did not enter an integer");
         }
 
+
     System.out.println(" "); // prints out an empty line for visual appealling
     }
 }
