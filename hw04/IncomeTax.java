@@ -59,7 +59,6 @@ public class IncomeTax {
     System.out.println(" "); // prints out an empty line for visual appealling
     
     
-        
     }
     
     
