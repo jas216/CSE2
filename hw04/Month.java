@@ -36,6 +36,7 @@ public class Month {
                         System.out.println("You did not enter a positve integer");  // returns error if input was not an integer
                     }      
                     
+                    
                     else {
                         boolean leap = (year % 4 == 0 && year % 100 != 0)||(year % 400 == 0);   // the boolean formula determines if it is a leap year or not 
                         
