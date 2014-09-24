@@ -14,9 +14,11 @@ public class Month {
     public static void main(String[] args){
         System.out.println(" "); // prints out an empty line for visual appealling
         
-        // declare variables
+        // define input method and device
         Scanner myScanner;
         myScanner = new Scanner(System.in);
+        
+        // declare variables
         int month, year;
         
         System.out.print("Enter an integer corresponding to a month of the year (1-12): ");

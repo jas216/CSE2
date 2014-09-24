@@ -39,22 +39,26 @@ public class TimePadding {
                 minutes = (timeInSeconds%3600)/60;
                 seconds = (timeInSeconds%3600)%60;
                 
+                System.out.println("The time is:");
                 System.out.print(hours+":");
+                
                 if (minutes <10 || seconds <10) {
-                    System.out.print("0"+minutes+":"+seconds);
+                    System.out.println("0"+minutes+":0"+seconds);
                 }
                 
-                else if (minutes <10 || seconds <10) {
-                    System.out.print("0"+minutes+":"+seconds);
-                })
+                else if (minutes <10) {
+                    System.out.println("0"+minutes+":"+seconds);
+                }
                 
-            
-                System.out.println(hours+":"+minutes+":"+seconds);
+                else if (seconds <10) {
+                    System.out.println(minutes+":0"+seconds);
+                }
                 
+                else {
+                System.out.println(":"+minutes+":"+seconds);
+                }
             }
-            
-            
-            
+
         }
         
         // if an integer was not entered, the program returns an error
