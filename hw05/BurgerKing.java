@@ -12,17 +12,21 @@
     public static void main(String[] args) {
         System.out.println(" ");        // empty line for visual appealing 
         
+        // varable declaration
         Scanner myScanner;
         myScanner = new Scanner(System.in);
         char order, burgerToppings, soda, fries;
         
+        // prompts the user to enter an option 
         System.out.println("Enter a letter to indicate a choice of:");
         System.out.println("Burger (B or b)");
         System.out.println("Soda (S or s)");
         System.out.print("Fries (F or f)    ");
         
+        // scanner variable defined as a char
         order = myScanner.next().charAt(0);
         
+        // main switch statement defines either burger, soda, or fries
         switch(order){
             
             case 'B':
@@ -32,6 +36,7 @@
                 System.out.println("        C or c for cheese");
                 System.out.print("        N or n for none of the above  ");    
                 
+                // burger inner switch stament difines any addtion to the burger order 
                 burgerToppings = myScanner.next().charAt(0);
                 switch (burgerToppings) {
                     case 'A':
@@ -46,7 +51,7 @@
                     case 'n':
                         System.out.println("You ordered a burger with none of the above");
                         break;
-                    default:
+                    default:                                                        // error message when an incorrect input is received
                         System.out.println("A valid input was not received");
                         break;
                 }
@@ -57,6 +62,7 @@
                 System.out.println("What kind of soda would you like?");
                 System.out.print(" Pepsi (P or p), Coke (C or c), Sprite (S or s), or Mountain Dew (M or m):    ");
                 
+                // inner statement for soda
                 soda = myScanner.next().charAt(0);
                 switch (soda) {
                     case 'P':
@@ -75,7 +81,7 @@
                     case 'm':
                         System.out.println("You ordered a Mountain Dew");
                         break;
-                    default:
+                    default:                                                    // error message when an incorrect input is received
                         System.out.println("A valid input was not received");
                         break;
                 }
@@ -86,6 +92,7 @@
                 System.out.println("What size of fries would you like?");
                 System.out.print("Large (S or s) or small (S or s):     ");
                 
+                // inner statement for fries
                 fries = myScanner.next().charAt(0);
                 switch (fries) {
                     case 'L':
@@ -96,14 +103,14 @@
                     case 's':
                         System.out.println("You ordered small fries");
                         break;
-                    default:
+                    default:                                                    // error message when an incorrect input is received
                         System.out.println("A valid input was not received");
                         break;
                 }
                 break;
             
             
-            default:
+            default:                                                            // error message for the main statement when an incorrect input is received
                 System.out.println("A valid input was not received");
                 break;
                 
