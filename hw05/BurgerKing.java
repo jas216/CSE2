@@ -1,7 +1,7 @@
 // Jose Sierra
 // CSE 2
 // hw05 - Problem #1
-/* The program prompts the user to enter a choice of burger, soda, and or fries.
+/* The program prompts the user to enter a choice of burger, soda, or fries.
  the program then details the selected choices */
  
  import java.util.Scanner;
