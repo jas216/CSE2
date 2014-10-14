@@ -13,7 +13,7 @@ public class HelloWorld{
     // add main method
     public static void main(String[] args) {
         
-        // print the statement with box around
+        /* print the statement with box around
         System.out.println("#########################");
         System.out.println("#########################");
         System.out.println("#                       #");
@@ -23,7 +23,35 @@ public class HelloWorld{
         System.out.println("#########################");
         System.out.println("test");
         
-        //test/testtest
+        */
+        
+        
+    
+        /* int x, y;
+        x=5;
+        y=9;
+        boolean result;
+        
+        result = (x>y);
+        
+        System.out.println(result);
+        */
+       
+        /* final int x=3, y=4;
+        x+=2;
+        
+        
+        System.out.println(y-1);
+        //System.out.println(x);
+        //System.out.println(x);
+        
+        
+        int n = 6, y=4, g=2;
+        double result; 
+        
+        result =   n * g + 2;
+        System.out.println(result);
+        */
         
     }
 }
