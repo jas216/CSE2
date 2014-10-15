@@ -16,10 +16,10 @@ public class Root {
         
         double low=0, high=0, middle, x, multiple, tolerance; 
         
-        
+        System.out.println("Enter a number:");
         // user input
         if (myScanner.hasNextDouble()){
-        
+            
             x= myScanner.nextDouble();
             
             low=0;
@@ -31,16 +31,22 @@ public class Root {
             double middleSquare= middle*middle;
             
             
-            while (multiple > middle){
+            while (tolerance > middle){
 
-                
-                
                 if (middleSquare > x ){
                     high = middle;
+                    middle = (high-low)/2;
+                    middleSquare= middle*middle;
+                    
                 }
+                
                 else {
                     low = middle;
+                    middle = (high-low)/2;
+                    middleSquare= middle*middle;
                 }  
+                
+                
             }
             
             System.out.println("The square root is: "+low);
