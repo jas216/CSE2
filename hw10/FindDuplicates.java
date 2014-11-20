@@ -112,4 +112,8 @@ public class FindDuplicates {
         out+="} ";
         return out;
     } // end of listArrey method 
-}
+    
+} // end of class 
+
+
+
